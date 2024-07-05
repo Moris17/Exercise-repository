@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid zadatak</title>
+
+    <style>
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+.container {
+    width: 1200px;
+    margin: 20px auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5,210px);
+    gap: 40px;
+}
+.tile {
+    text-align: center;
+    
+}
+.placeholder {
+    width: 170px;
+    height: 100px;
+    background-color: rgb(79, 162, 201);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url(placeholder-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+  .ph_text {
+    background-color: rgb(241, 241, 241);
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.text {
+    margin: 40px auto;
+}
+
+@media screen and (max-width:1024px) {
+.container {
+    width: 700px;
+    margin: 20px auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,210px);
+}
+}
+
+@media screen and (max-width:768px) {
+    .container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+@media screen and (max-width:414px) {
+.container {
+    width: 80%;
+}
+}
+
+
+
+</style>
+
+</head>
+<body>
+    
+<div class="container">
+    <h1>Gallery Heading</h1>
+    <div class="wrapper">
+
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+    <div class="tile"><div class="placeholder"></div><div class="ph_text">Image Title</div></div>
+</div>
+
+<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquam corporis ratione. Illo dolores eaque tempora quam libero hic, modi voluptate laborum possimus accusamus maxime facere velit itaque saepe reprehenderit. Maxime rem repellendus dicta excepturi. Sit, voluptatibus perspiciatis. Tenetur nihil unde similique repellat consequuntur veniam repellendus temporibus ullam fuga incidunt consequatur, delectus voluptatem maxime aperiam possimus expedita praesentium fugiat sed ab iste, architecto perferendis cum magnam. Exercitationem commodi sint culpa impedit blanditiis assumenda voluptas magni voluptatibus sapiente alias. Ad earum, eaque accusamus cum veniam non debitis, dolores aliquam sapiente eveniet ducimus eius.</p>
+</div>
+
+
+
+
+</body>
+</html>
